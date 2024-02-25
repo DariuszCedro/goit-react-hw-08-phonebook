@@ -8,7 +8,7 @@ import { persistReducer, persistStore, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, 
 const authConfig = {
   key: "auth",
   storage,
-  whitelist: ["token"],
+  whitelist: ["token", "user"],
   };
 
 export const { setFilter } = filterSlice.actions;

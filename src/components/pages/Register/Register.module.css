@@ -1,0 +1,23 @@
+.registerInput {
+    font-size: 20px;
+  border-radius: 8px;
+}
+
+.registerButton:hover {
+    background-color: #1bf308;
+  }
+
+.registerInput:focus {
+    outline-color: #0c08e0;
+}
+
+.registerButton {
+    display: block;
+  margin-top: 15px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #f1ebeb;
+}
+

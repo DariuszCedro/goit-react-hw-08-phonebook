@@ -1,0 +1,11 @@
+.imageContainer {
+ display: flex;
+ justify-content: left;
+
+}
+
+.phonebookImage {
+    width: 550px;
+    height: 550px;
+    
+}

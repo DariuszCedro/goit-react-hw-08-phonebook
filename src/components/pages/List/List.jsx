@@ -2,13 +2,13 @@ import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import css from './List.module.css';
 import { useDispatch } from 'react-redux';
-import { deleteContact, fetchContacts } from '../../redux/operations';
+import { deleteContact, fetchContacts } from '../../../redux/operations';
 import { useEffect } from 'react';
 import {
   selectIsLoading,
   selectError,
   selectFilteredContacts,
-} from '../../redux/selectors';
+} from '../../../redux/selectors';
 
 export const List = () => {
   const dispatch = useDispatch();
@@ -30,12 +30,12 @@ export const List = () => {
 
   return (
     <div>
-      {isLoading && <b>Loading tasks...</b>}
+      {isLoading && <b>Loading contacts...</b>}
       {error && <b>{error}</b>}
 
       <ul>
         {contacts.map(contact => (
-          <li key={contact.id}>
+          <li className={css.listContact} key={contact.id}>
             {contact.name} : {contact.number}
             <button
               type="button"

@@ -1,0 +1,46 @@
+.navigation {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    padding-left: 80px;
+    
+    
+}
+
+a {
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  a:visited {
+    color: black;
+  }
+  
+  a:hover {
+    color: white;
+    background-color: rgb(160, 160, 248);
+  }
+
+  a:active {
+    color: red;
+  }
+
+  .logoutButton {
+    border-radius: 7px;
+    background-color: rgb(81, 168, 245);
+    font-size: 18px;
+  }
+
+  .logoutButton:hover {
+    border-radius: 7px;
+    background-color: rgb(233, 10, 10);
+    color: white;
+    font-size: 18px;
+  }
+
+  p {margin: 0px;
+  align-self: center;}

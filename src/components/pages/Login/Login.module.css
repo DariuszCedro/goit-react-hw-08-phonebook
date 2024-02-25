@@ -1,0 +1,22 @@
+.loginInput {
+    font-size: 20px;
+  border-radius: 8px;
+}
+
+.loginButton:hover {
+    background-color: #1bf308;
+  }
+
+.loginInput:focus {
+    outline-color: #0c08e0;
+}
+
+.loginButton {
+    display: block;
+  margin-top: 15px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #f1ebeb;
+}

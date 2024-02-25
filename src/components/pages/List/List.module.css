@@ -14,10 +14,13 @@ ul {
   padding: 0;
 }
 
-li {
+.listContact {
   display: flex;
-
+  padding-left: 10px;
   margin-bottom: 10px;
   width: 400px;
   justify-content: space-between;
+  background-color: #14c463;
+  align-items: center;
+  color: white;
 }

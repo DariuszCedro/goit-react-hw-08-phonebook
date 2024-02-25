@@ -80,6 +80,7 @@ export const fetchContacts = createAsyncThunk(
     try {
       const res = await axios.post("/users/login", credentials);
       setAuthHeader(res.data.token);
+      console.log(res.data)
       return res.data;
     } catch (err) {
       return thunkAPI.rejectWithValue(err.message);

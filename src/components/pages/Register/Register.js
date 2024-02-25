@@ -1,6 +1,7 @@
 import {useDispatch} from "react-redux";
-import {register} from "../../redux/operations";
+import {register} from "../../../redux/operations";
 import {useState} from "react";
+import css from './Register.module.css';
 
 export default function Register() {
 const [username, setUsername] = useState('');
@@ -21,15 +22,15 @@ const handleSubmit = e => {
         <div>
             <form onSubmit={handleSubmit}>
                 <h3>User name</h3>
-                <input type="text" name="name" value={username}
+                <input className={css.registerInput} type="text" name="name" value={username}
                 onChange={e => setUsername(e.target.value)}></input>
                 <h3>Email</h3>
-                <input type="text" name="email" value={email}
+                <input className={css.registerInput}  type="text" name="email" value={email}
                 onChange={e => setEmail(e.target.value)}></input>
                 <h3>Password</h3>
-                <input type="password" name="password" value={password}
+                <input className={css.registerInput}  type="password" name="password" value={password}
                 onChange={e => setPassword(e.target.value)}></input>
-                <button type="submit" onClick={handleSubmit}>Zarejestruj</button>
+                <button className={css.registerButton} type="submit" onClick={handleSubmit}>Zarejestruj</button>
             </form>
         </div>
     )

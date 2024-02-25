@@ -1,4 +1,4 @@
-import {useAuth} from "../../redux/useAuth";
+import {useAuth} from "../../../redux/useAuth";
 import {Navigate} from 'react-router-dom';
 
 export default function PrivateRoute({element: Component, redirect}) {
