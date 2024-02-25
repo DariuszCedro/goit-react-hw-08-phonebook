@@ -36,7 +36,7 @@ export const List = () => {
       <ul>
         {contacts.map(contact => (
           <li key={contact.id}>
-            {contact.contactName} : {contact.number}
+            {contact.name} : {contact.number}
             <button
               type="button"
               className={css.buttonRemove}

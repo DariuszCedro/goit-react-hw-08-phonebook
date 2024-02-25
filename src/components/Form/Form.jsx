@@ -14,11 +14,11 @@ export const Form = () => {
     const nameToAdd = form.elements.name.value;
     const phoneNumber = form.elements.number.value;
     const newContact = {
-      contactName: nameToAdd,
+      name: nameToAdd,
       number: phoneNumber,
     };
     const contactExist = contacts.some(
-      contact => contact.contactName.toLowerCase() === nameToAdd.toLowerCase()
+      contact => contact.name.toLowerCase() === nameToAdd.toLowerCase()
     );
     if (nameToAdd === '' && phoneNumber === '') {
       return;

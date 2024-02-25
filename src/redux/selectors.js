@@ -8,9 +8,10 @@ export const selectFilter = state => state.filter;
 export const selectFilteredContacts = createSelector(
   [selectContacts, selectFilter],
   (contacts, filter) => {
+    console.log(contacts)
     if (contacts)
       return contacts.filter(contact =>
-        contact.contactName.toLowerCase().includes(filter)
+        contact.name.toLowerCase().includes(filter)
       );
     return [];
   }
@@ -18,3 +19,4 @@ export const selectFilteredContacts = createSelector(
 
 export const selectIsLoggedIn = state => state.auth.isLoggedIn;
 export const selectUser = state => state.auth.user;
+export const selecIsRefreshing = state => state.auth.isRefreshing;

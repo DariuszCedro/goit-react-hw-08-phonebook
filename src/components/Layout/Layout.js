@@ -10,8 +10,10 @@ const handleClick =()=> {
 }
 
     return (<>
-    <button onClick={handleClick}>Logout</button>
     <Link to='contacts'>Contacts</Link>
+    <p>mango@mail.com</p>
+    <button onClick={handleClick}>Logout</button>
+    
     </>)
 };
 const UnauthenticatedNav = () => (
